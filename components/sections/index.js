@@ -1,0 +1,6 @@
+export * from './menu'
+export * from './above-the-fold'
+export * from './who-we-are'
+export * from './recorded-audios'
+export * from './our-team'
+export * from './contact-us'

@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.clicked .social {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+.social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 18pt;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.social a:hover {
+  background-color: red;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 18pt;
+  border-radius: 25px;
+  background-color: black;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.button:hover {
+  background-color: red;
+}
