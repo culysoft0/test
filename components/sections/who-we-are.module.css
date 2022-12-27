@@ -1,0 +1,109 @@
+.aboutUs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 240px 0;
+  font-size: 16pt;
+  color: #333;
+  background: url('/images/visual-elements/98.3.png') 10% 80px fixed,
+              url('/images/visual-elements/who-we-are.png') 90% 80px;
+  background-repeat: no-repeat;
+}
+
+.ourValues,
+.ourMissionAndGoals {
+  display: flex;
+  position: relative;
+}
+
+.ourValues {
+  padding-bottom: 180px;
+}
+
+.ourValues .content {
+  text-align: left;
+}
+
+.ourValues span {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.ourValues span i {
+  font-size: 48pt;
+  color: #0000004D;
+}
+
+.ourMissionAndGoals {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.content {
+  width: fit-content;
+  max-width: 50%;
+  padding: 0 40px;
+  font-size: 12pt;
+}
+
+.ourMissionAndGoals .content {
+  padding-left: 10%;
+}
+
+.ourMissionAndGoals .content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #004466;
+}
+
+@media (max-width: 820px) {
+  .aboutUs {
+    background: url('/images/visual-elements/98.3.png') no-repeat 10% 80px fixed;
+  }
+
+  .ourValues {
+    flex-direction: column-reverse;
+  }
+
+  .ourMissionAndGoals {
+    flex-direction: column;
+  }
+
+  .ourValues .content {
+    border-left: 10px solid #004466;
+    background: white;
+  }
+
+  .ourMissionAndGoals .content {
+    border-right: 10px solid #004466;
+  }
+  
+  .content {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .ourMissionAndGoals .content:before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUs {
+    padding: 120px 0;
+    background: url('/images/visual-elements/98.3.png') no-repeat 10% 80px fixed;
+    background-size: 240px;
+  }
+
+  .ourValues {
+    padding-bottom: 80px;
+  }
+}

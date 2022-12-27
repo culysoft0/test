@@ -1,0 +1,140 @@
+.contactUs {
+  position: relative;
+  display: flex;
+  padding-bottom: 240px;
+  background: url('/images/visual-elements/98.3.png')
+              no-repeat 10% calc(100% - 80px) fixed;
+}
+
+.contactUs h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: normal;
+  color: #121212;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  padding: 40px;
+  text-align: right;
+  color: white;
+  background: #004466;
+}
+
+.location p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: lighter;
+}
+
+.location i {
+  margin-left: 20px;
+  font-size: 18pt;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 60%;
+  min-height: 500px;
+  padding: 0 40px;
+  background-color: white;
+}
+
+.form:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #004466;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form form input,
+.form form textarea {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+  padding: 12px 20px;
+  color: #121212;
+  outline: none;
+  background-color: lightgray;
+}
+
+.form form input::placeholder,
+.form form textarea::placeholder {
+  color: gray
+}
+
+.form form textarea {
+  height: 100px;
+  resize: none;
+}
+
+@media (max-width: 786px) {
+  .contactUs {
+    flex-direction: column-reverse;
+  }
+
+  .form {
+    width: 100%;
+    align-items: center;
+    padding: 0 10% 40px;
+  }
+
+  .form:before {
+    display: none;
+  }
+
+  .form form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .form form div {
+    align-items: center;
+  }
+  
+  .location {
+    width: 100%;
+    padding-left: 10%;
+    text-align: left;
+  }
+
+  .location p {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .location i {
+    margin: 0;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactUs {
+    padding-bottom: 120px;
+    background: url('/images/visual-elements/98.3.png')
+                no-repeat 10% calc(100% - 80px) fixed;
+    background-size: 240px;
+  }
+}
